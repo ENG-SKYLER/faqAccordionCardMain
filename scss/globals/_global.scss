@@ -1,0 +1,12 @@
+@use "../util/index2" as u;
+body {
+  font-size: u.rem(13);
+  font-family: u.$mainFamily;
+  background: linear-gradient(180deg, u.$gradientViolet, 50%, u.$gradientBlue);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

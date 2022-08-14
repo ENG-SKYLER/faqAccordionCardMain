@@ -1,0 +1,159 @@
+@use "../util/index2" as u;
+
+main {
+  @include u.breakpoint(large) {
+    width: u.rem(920);
+  }
+}
+.container {
+  @include u.breakpoint(large) {
+    width: u.rem(920);
+    max-width: u.rem(920);
+    display: flex;
+    min-height: u.rem(510);
+    margin: 0 0 1rem u.rem(44);
+    position: relative;
+  }
+  &::after {
+    @include u.breakpoint(large) {
+      content: "";
+      position: absolute;
+      background-image: url(/images/illustration-box-desktop.svg);
+      top: u.rem(203);
+      left: u.rem(-93);
+      height: u.rem(184);
+      width: u.rem(191);
+      z-index: 2;
+    }
+  }
+  background-color: white;
+  max-width: u.rem(327);
+  margin-inline: auto;
+  border-radius: u.rem(20);
+  box-shadow: 0px u.rem(10) u.rem(40) hsl(257deg 35% 47%);
+  padding: u.rem(34) 0 u.rem(48);
+  &__image {
+    @include u.breakpoint(large) {
+      background-image: url(/images/illustration-woman-online-desktop.svg);
+      position: absolute;
+      top: 0;
+      justify-content: flex-start;
+      left: u.rem(-84);
+      width: 50%;
+      height: 100%;
+    }
+    background: {
+      image: url(/images/illustration-woman-online-mobile.svg);
+      position: center;
+      size: contain;
+      repeat: no-repeat;
+    }
+    width: 72.4%;
+    margin-inline: auto;
+    position: relative;
+    top: u.rem(-159);
+    height: u.rem(215);
+    &::after {
+      @include u.breakpoint(large) {
+        background-image: url(/images/bg-pattern-desktop.svg);
+      }
+      content: "";
+      position: absolute;
+      background: {
+        image: url(/images/bg-pattern-mobile.svg);
+        repeat: no-repeat;
+        size: contain;
+        position: center;
+      }
+      bottom: u.rem(-72);
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__details {
+    @include u.breakpoint(large) {
+      margin: u.rem(100) 0 0 auto;
+      width: 50%;
+      padding: u.rem(34) u.rem(94) u.rem(38) 0;
+      align-self: center;
+    }
+    padding: 0px u.rem(24);
+    h1 {
+      @include u.breakpoint(large) {
+        text-align: left;
+        margin-bottom: u.rem(24);
+      }
+      text-align: center;
+      font: {
+        weight: 700;
+        size: u.rem(32);
+      }
+      margin: u.rem(-100) 0 u.rem(18) 0;
+    }
+    &__faq {
+      p {
+        line-height: 1.45;
+      }
+      .box {
+        padding: u.rem(15) 0;
+        border-bottom: u.rem(1) solid rgb(231 231 233);
+        position: relative;
+        &.click {
+          .que {
+            color: u.$pr-fontColor;
+            font-weight: 700;
+            margin-bottom: u.rem(12);
+            &::before {
+              background-image: url(/images/icon-arrow-down.svg);
+              transform: rotate(180deg);
+            }
+          }
+          .asw {
+            height: 100%;
+            transform: translateY(0%);
+            transition: visibility 0.3s, transform 0.3s, height 0.3s;
+            visibility: visible;
+            margin-bottom: u.rem(4);
+          }
+        }
+        .que {
+          font-size: u.rem(14);
+          position: relative;
+          cursor: pointer;
+          &::before {
+            content: "";
+            top: 30%;
+            right: 0;
+            position: absolute;
+            background: {
+              image: url(/images/icon-arrow-down.svg);
+              repeat: no-repeat;
+            }
+            width: u.rem(12.8);
+            height: u.em(9.6);
+          }
+          &:hover {
+            color: u.$pr-fontColor2;
+          }
+        }
+        .asw {
+          width: 100%;
+          height: 0;
+          visibility: hidden;
+          transform: translateY(-50%);
+          color: u.$sec-fontColor2;
+        }
+      }
+    }
+  }
+}
+footer {
+  position: absolute;
+  bottom: u.rem(10);
+  color: u.$pr-fontColor;
+  font-size: u.rem(13);
+  a {
+    color: u.$pr-fontColor2;
+    font-weight: bold;
+  }
+}
