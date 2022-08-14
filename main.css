@@ -84,7 +84,7 @@ body {
   .container::after {
     content: "";
     position: absolute;
-    background-image: url(/images/illustration-box-desktop.svg);
+    background-image: url("./images/illustration-box-desktop.svg");
     top: 12.6875rem;
     left: -5.8125rem;
     height: 11.5rem;
@@ -93,7 +93,7 @@ body {
   }
 }
 .container__image {
-  background-image: url(/images/illustration-woman-online-mobile.svg);
+  background-image: url("./images/illustration-woman-online-mobile.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -105,7 +105,7 @@ body {
 }
 @media (min-width: 50em) {
   .container__image {
-    background-image: url(/images/illustration-woman-online-desktop.svg);
+    background-image: url("./images/illustration-woman-online-desktop.svg");
     position: absolute;
     top: 0;
     -webkit-box-pack: start;
@@ -119,7 +119,7 @@ body {
 .container__image::after {
   content: "";
   position: absolute;
-  background-image: url(/images/bg-pattern-mobile.svg);
+  background-image: url("./images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -129,7 +129,7 @@ body {
 }
 @media (min-width: 50em) {
   .container__image::after {
-    background-image: url(/images/bg-pattern-desktop.svg);
+    background-image: url("./images/bg-pattern-desktop.svg");
   }
 }
 .container__details {
@@ -171,7 +171,7 @@ body {
   margin-bottom: 0.75rem;
 }
 .container__details__faq .box.click .que::before {
-  background-image: url(/images/icon-arrow-down.svg);
+  background-image: url("./images/icon-arrow-down.svg");
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -196,7 +196,7 @@ body {
   top: 30%;
   right: 0;
   position: absolute;
-  background-image: url(/images/icon-arrow-down.svg);
+  background-image: url("./images/icon-arrow-down.svg");
   background-repeat: no-repeat;
   width: 0.8rem;
   height: 0.6em;
