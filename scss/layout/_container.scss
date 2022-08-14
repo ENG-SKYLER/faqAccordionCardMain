@@ -18,7 +18,7 @@ main {
     @include u.breakpoint(large) {
       content: "";
       position: absolute;
-      background-image: url(/images/illustration-box-desktop.svg);
+      background-image: url(./images/illustration-box-desktop.svg);
       top: u.rem(203);
       left: u.rem(-93);
       height: u.rem(184);
@@ -34,7 +34,7 @@ main {
   padding: u.rem(34) 0 u.rem(48);
   &__image {
     @include u.breakpoint(large) {
-      background-image: url(/images/illustration-woman-online-desktop.svg);
+      background-image: url(./images/illustration-woman-online-desktop.svg);
       position: absolute;
       top: 0;
       justify-content: flex-start;
@@ -43,7 +43,7 @@ main {
       height: 100%;
     }
     background: {
-      image: url(/images/illustration-woman-online-mobile.svg);
+      image: url(./images/illustration-woman-online-mobile.svg);
       position: center;
       size: contain;
       repeat: no-repeat;
@@ -55,12 +55,12 @@ main {
     height: u.rem(215);
     &::after {
       @include u.breakpoint(large) {
-        background-image: url(/images/bg-pattern-desktop.svg);
+        background-image: url(./images/bg-pattern-desktop.svg);
       }
       content: "";
       position: absolute;
       background: {
-        image: url(/images/bg-pattern-mobile.svg);
+        image: url(./images/bg-pattern-mobile.svg);
         repeat: no-repeat;
         size: contain;
         position: center;
@@ -104,7 +104,7 @@ main {
             font-weight: 700;
             margin-bottom: u.rem(12);
             &::before {
-              background-image: url(/images/icon-arrow-down.svg);
+              background-image: url(./images/icon-arrow-down.svg);
               transform: rotate(180deg);
             }
           }
@@ -126,7 +126,7 @@ main {
             right: 0;
             position: absolute;
             background: {
-              image: url(/images/icon-arrow-down.svg);
+              image: url(./images/icon-arrow-down.svg);
               repeat: no-repeat;
             }
             width: u.rem(12.8);
